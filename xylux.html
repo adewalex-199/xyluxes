@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xyluz</title>
+    <style>
+      *{margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}  
+
+header{width: 90%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+align-items: center;}
+header .logo p4{font-size: 12px;
+font-weight: 700;}
+header .logo {display: flex;
+justify-content: center;
+align-items: center;
+    width: 50px;
+height: 50px;
+border: 3px dashed black;
+border-radius: 50%;
+  }
+nav ul{list-style: none;
+border-left: 1px dashed black;    
+border-bottom:1px dashed black;  ;
+margin: 0;
+padding-left: 20px;
+padding-bottom: 10px;
+}
+
+nav ul li{display: inline-block;
+margin-right: 20px;
+position: relative;}
+nav ul li a{color: black;
+text-decoration: none;
+font-size: 1em;}
+nav ul li::before{
+    content:" ";
+    height: 2px ;
+width:20px;
+position: absolute;
+bottom: -3px;
+z-index: 1;
+transition: all .6s;
+background-color: black;}
+nav ul li:hover::before{width:40px;
+    content:" ";
+    z-index: 1;
+    bottom: -3px;
+    height: 2px ;
+    transition: all .6s;
+    background-color: gray;
+ }
+
+ main .intro{display: flex;
+ width: 90%;
+ border-right: 1px dashed black;
+ border-bottom : 2px solid black;
+ height: 60vh;
+ padding-right: 1em;
+ position: relative;
+ overflow: hidden;
+ justify-content: space-between;
+ margin:30px auto 0 auto ;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;}
+ main .intro::before{content: "";
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+color: white;
+ background: black;
+ z-index: 1;
+ position: absolute;
+ left: -135px;
+ top: 30%;}
+ main .intro .title::after{content: "";
+ width: 50%;
+ height: 80%;
+ border-radius: 100%;
+color: white;
+ background: black;
+ z-index: -1;
+ position: absolute;
+ left: 46%;
+ top: -100px;}
+ main .intro .title{width:50%;
+ position: relative;
+ border-right: 1px dashed black;
+ border-top-right-radius: 10%;}
+ main .intro .title{z-index: 100;}
+ main .intro .title p1{font-size: 4em;}
+ main .intro .title p2{font-size: 3em;}
+    main .intro .big-pic{ width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    background-color: black;
+    }
+
+    main .intro .big-pic .small{width: 90%;
+    border-radius: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        border:20px solid white;}
+        main .intro .big-pic::before{content: ""; 
+        width: 240px;
+        height: 200px;
+        position: absolute;
+        bottom: -60px;
+        
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: -1;
+        background: white;
+        box-shadow: 2px 2px 10px 5px rgb(185, 179, 179);}
+        main .intro .big-pic::after{content: ""; 
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        border-radius: 50%;
+        left: -50px;
+        z-index: -1;
+        background: rgb(143, 139, 139);
+      }
+        main .intro .big-pic  .desc{position: absolute;
+        bottom: -50px;}
+        main .intro .big-pic .desc p5{font-size: 16px;
+            font-weight: 600;}
+    main .intro .big-pic .small img.pro-img{width:100%;
+ height: 100%;
+ border-radius: 50%;}
+ .down{text-align: center;
+ background: white;
+ color: black;
+ width: 150px;
+ position: relative;
+ left: 150px;
+ top: 70px;
+ border-radius: 20px;
+ padding: 5px 8px;
+ box-shadow: 1px 2px 2px 2px rgb(185, 179, 179);
+ 
+ }
+ 
+ .down p6{color: black;
+ font-size: 16px;
+ font-weight: 600;
+ }
+ .down  button{padding: 5px;
+ border: 2px solid black inset;
+ box-shadow: 2px 2px 3px 2px rgb(185, 179, 179);
+ background: rgb(255, 251, 251);
+ border-radius: 9px;
+ font-weight: 600;
+ outline: none;}
+ .down  button:hover{box-shadow:0px 0px;}
+ main .second{display: flex;
+ width: 70%;
+ z-index: -1;
+ margin-bottom: 20px;
+ font-size: 14px;
+ ; position: relative;
+ margin:90px auto 0 auto;
+ justify-content: space-between;
+ 
+ height: 300px;}
+ 
+ 
+ main .second .box{max-width:20vw;
+ min-height: 40vh;
+ text-align: center;
+ box-shadow: -1px 4px 6px 2px rgb(185, 179, 179);
+ background-color: rgb(241, 237, 237);
+ border-radius: 9px;
+ padding: 0 10px;
+ }
+ main .second .box h5{text-align: center;
+ width: 100px;
+ padding: 10px;
+ height: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ top: -50px;
+ border-radius:50% ;
+ color: white;
+ background-color: rgb(44, 43, 43);
+ margin: auto;}
+ main .third .box-2 .client{max-width: 25%;
+ min-height:30vh;
+ justify-content: center;
+
+ text-align: center;
+ box-shadow: -1px 4px 6px 2px rgb(185, 179, 179);
+ background-color: rgb(241, 237, 237);
+ border-radius: 9px;
+ padding: 0 10px;
+ }
+ p3:hover{transform: scaleX(1.1);}
+ main .third{margin-top: 40px;}
+ main .third .box-2{display: flex;
+ min-width:700px;
+ background: rgb(158, 157, 157);
+ height:290px;
+ align-items: center;
+ border-radius: 20px;
+ position: relative;
+ 
+ justify-content: space-around;
+ }
+ main .third .box-2 .client img.radius{width: 100px;
+ height: 100px;
+ position: relative;
+ top: -30px;
+ border-radius:50% ;}
+ 
+ main .third h4{text-align: center;
+ position: relative;
+ margin: auto;
+ padding-bottom: 20px;
+ width: 100px;}
+ main .third h4::after{ 
+     content:"";
+     
+     width: 100px;
+ position: absolute;
+ top: 20px;
+ left: 0;
+ height: 2px;
+ background-color: rgb(68, 65, 65);}
+ main .third .box-2 .client p {font-size: 13px;}
+ .as{transform: rotateY(deg);
+ background-color: red;
+ height: 50px;
+ width: 200px;}
+ section{display: flex;
+ width: 100%;
+ justify-content: center;}
+ footer{width: 100%;
+ background-color: black;
+ height: 100px;
+ margin-top: 20px;}
+ .f-t{ width:70%;
+ margin:auto;
+ padding: 1em;
+ text-align:center;}
+ .f-t a{color: white;
+ margin: 2em;
+ }
+ .created{ width: 200px;
+ margin: auto;
+ color: white;
+ text-align: center;
+ }
+ .text{width: 300px;
+ margin: 20px auto 0 auto;
+ height: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ border: 10px solid black;
+ border-radius: 50%;
+ 
+ 
+ }
+ textarea{background:white;
+ border-radius: 9px;
+ box-shadow: -1px 4px 6px 2px rgb(185, 179, 179);
+ outline: none;
+ border: none;}
+ textarea:focus{background:rgb(168, 164, 164);}
+ input[type="submit"]{padding: 5px;
+ background:rgb(158, 157, 157); 
+ position: relative;
+ font-size: 15px;
+ font-weight: 700;
+ border-radius: 9px;
+ margin-top: 5px;
+ width: 100%;
+  border: none;
+ box-shadow: -1px 4px 6px 2px rgb(185, 179, 179);}
+ input[type="submit"]:hover{box-shadow: 0px 0px;
+ }
+ .text h4{text-align: center;
+ font-size: 15px;
+ padding-bottom: 10px;
+ font-weight: 700;}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p4> XYLUX</p4>
+            
+        </div>
+        <nav>
+            <ul class="menu">
+<li class="links"><a href="#home">Home</a></li>
+<li class="links"><a href="#about">Info</a></li>
+<li class="links"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+        
+    
+    <main>
+    <div class="intro">
+        <div class="title">
+            <p1>XYLUX</p1>
+            <br>
+            <br>
+            <p2><span style="color: white;">Qual</span>ity 
+                X Profi<span style="color: white;">ciency</span></p2>
+            <div class="down">
+                <p6>Download CV</p6>
+                <br>
+               <button type="button">Download</button>
+           </div>
+         </div>
+     <div class="bigger">
+    <div class="big-pic">
+        <div class="small">
+        <img  class="pro-img" src="xyluxs.jpg" alt="">
+        <div class="desc">
+            <p5>Seyi Onifade {XYLUX} 
+                <br>
+                Professional Programmer 
+            </p5>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+    
+
+    <div class="second">
+        <div class="box">
+            <h5>About</h5>
+            <p7>I'm Xylux a profession Programmer
+            I design and develop world class website and software
+            using most uptodate tools. with sleek feel and great UX/UI.</p7>
+        </div>  
+          
+         <div class="box"> 
+             <h5>Areas of speciality</h5>
+        <p9> HTML 
+            CSS
+            JAVA SCRIPT
+            DEBUGGING
+            PHYTHON
+            REACT ...among host of others
+        </p9></div>
+         <div class="box">
+             <h5>Team</h5>
+            <p8> Team work makes perfect work. as we have various highly expereinced team with vast
+                knowledge to solve any given problem at any point in time.
+            </p8>
+        </div>   
+    </div>
+    <section>
+    <div class="third">
+        
+            <h4>Testimonials</h4>
+            <div class="box-2">
+                
+                <div class="client"><img class="radius" src="private4.jpg" alt="">
+                <br>
+            <p><span style="font-size: 25px; color:black; font-weight: 700px;">"" </span>
+                Never had any cause to complain cus i was so 
+                satisfied with xylux service</p></div>
+                <div class="client"><img class="radius" src="mas.jpg" alt="">
+                    <br>
+                    <p>
+                        <span style="font-size: 25px; color:black;font-weight: 700px;">
+                            "" </span> The software I ordered for my company is 
+                        fantastically beautiful </p></div>
+                <div class="client"><img class="radius" src="ajex.jpg" alt="">
+                    <br>
+                    <p><span style="font-size: 25px; color:black;font-weight: 700px;">"" </span>
+                        Mine is just about appreciation thank you so much</p></div>
+                
+
+
+        </div> 
+    </section> 
+        <div class="text">
+
+            <h4>Any Question</h4>
+            <textarea name="adex" id="write" cols="30" rows="10" draggable="false">
+
+            </textarea>
+            
+            <div><input type="submit" value="submit"></div>
+        </div>
+</main>
+<footer>
+    
+    <div class="f-t">
+    <a><i class="fas fa-facebook"></i>Facebook</a>
+    <a><i class="fas fa-twitter"></i>Twitter</a>
+    <a><i class="fas fa-linkedin"></i>Linkedin</a>
+    <a><i class="fas fa-instagram"></i>Instagram</a>
+    <a><i class="fas fa-gmail"></i>Gmail</a>
+</div>
+<div class="created">
+    All right reserved  &#169;
+</div>
+</footer>
+</body>
+</html>
